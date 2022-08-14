@@ -1,4 +1,6 @@
 
+//arrow left arrow right does not work;
+
 let display=document.getElementById('display');
 
  console.log(display.innerText);
@@ -30,9 +32,10 @@ document.addEventListener("keyup", function(event) {
 
 function fun(key)
 {
-    console.log(key);
-    if(key=='Control' ||key=='Shift' ||key=='Standby' );
+    // console.log(key);
 
+    if(key=='Control' ||key=='Shift' ||key=='Standby' ||key=='I' ||key=='CapsLock'|| key=='ArrowDown' ||key=='ArrowUp'||key=='PageDown'||key=='PageUp');
+    
     else{
         if(key=='C'|| key=='c'  ) 
         {display.innerText="";}
@@ -42,9 +45,15 @@ function fun(key)
         {
                 try
                 { 
-                 let x=display.innerText;
+    
+                temp=display.innerText;
+                temp+=" = ";
                 display.innerText=eval(display.innerText);
-                history+=x;
+                temp+=display.innerText;
+                history.innerText+=temp+"\n";
+                //history.innerHTML="<pre>Hello </pre>"
+                temp="";
+                console.log(history.innerText);
 
                 }
                 catch
@@ -56,7 +65,7 @@ function fun(key)
         }
         else
         {
-            if(display.innerText=='undefined' ||display.innerText =='Infinity')display.innerText="";
+            if(display.innerText=='undefined' ||display.innerText =='Infinity' )display.innerText="";
             display.innerText+=key;
         }
 
@@ -66,5 +75,8 @@ function fun(key)
 
 
 
-let histor=let =document.getElementById('history_containt');
-console.log(histor.innerHTML);
+let history =document.getElementById('history_containt');
+// console.log(histor.innerHTML);
+let temp="";
+
+
