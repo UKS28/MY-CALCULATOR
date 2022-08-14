@@ -117,13 +117,14 @@ P{
     /* background-color: green; */
     height: 450px;
     padding: 10px;
+    margin-bottom: 10vh !important;
     /* background-color: black; */
    
 }
 .big-block{
  
     height: 450px;
-    
+    margin-bottom: 10vh !important;
 }
 
 .body{
@@ -134,3 +135,20 @@ P{
 .history{
     font-size: 20px;
 }
+
+.footer
+{
+    width: 100% !important;
+    position: relative;
+
+    bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer
+    {
+        width: 100% !important;
+        position: absolute;
+        bottom: 0;
+    }
+  } 
