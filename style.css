@@ -1,0 +1,87 @@
+/* 
+
+.Container
+{
+    background-color: red;
+}
+.footer
+{
+    background-color: purple;
+    margin: 0;
+} */
+
+/* CONTAINTS*/
+
+.TOP{
+    max-width: 600px;
+    text-align: center;
+    margin: 10vh auto 0vh auto;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
+/* main content */
+.Container {
+    max-width: 600px;
+    margin: 10vh auto 0vh auto;
+}
+
+
+/* contains answer */
+#display
+{
+    background-color:#EAF6F6;
+    line-height: 70px;
+    text-align: right;
+    height: 70px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* apply on all button */
+.buttons
+{
+    display: grid;
+    /* border-bottom: 1px solid #999;
+    border-left: 1px solid #999; */
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+/* for each button */
+
+.button{
+ border: 0.5px solid #999;
+ /* 100 k jagah 50px */
+ line-height: 50px; 
+ text-align: center;
+ font-size: 30px;
+ cursor: pointer;
+ /* width: 70px; */
+ /* height: 70px; */
+ /* background: red; */
+ border-radius: 10%
+
+}
+
+/* for equal button */
+#equal
+{
+    background-color:grey;
+}
+
+
+.button:hover{
+    background-color: #CFD2CF;
+    color: white;
+    /* transition: 0.3s ease-in-out; */
+}
+
+/* copyright */
+p{
+    text-align: center;
+    padding-top: 15px;
+}
