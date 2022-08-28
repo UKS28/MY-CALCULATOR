@@ -38,6 +38,7 @@
     height: 70px;
     font-size: 25px;
     margin-bottom: 10px;
+    overflow-wrap: break-word;
 }
 
 /* apply on all button */
@@ -101,14 +102,27 @@ P{
 .history-block
 {
     /* background-color:#F5E8E4; */
+    /* float: left;
+    width: 0;
+    padding: 0;
+    height: 0; */
+    /*to contain words only inside divs */
+    /* 
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: red;
+    padding-left: 0px;
+    padding-right: 0px; */
+    /* padding-bottom: 376px; */
     float: left;
     width: 40%;
     padding: 10px;
     height: 450px;
-    /* padding-bottom: 376px; */
-   
+    overflow-wrap: break-word;
 
 }
+
 
 .section
 {
